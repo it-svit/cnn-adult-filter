@@ -9,17 +9,15 @@ logging.basicConfig(
 # Base path to directory with data
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
+MODELS_DIR = os.path.join(BASE_DIR, 'models')
 
-# Path to directory with embeddings files for each supported language
-LANGS_EMBEDDINGS = os.path.join(DATA_DIR, 'word2vec_emb')
 # path to multilang embeddings array
 WORD2VEC_EMBEDDINGS = os.path.join(DATA_DIR, 'embeddings.pickle')
 # path to multilang vocabulary dict (word: index in embeddings)
 VOCABULARY_PATH = os.path.join(DATA_DIR, 'vocabulary.json')
 
-MODELS_DIR_PATH = os.path.join(BASE_DIR, 'models')
 # path to trained model in .h5py format
-MODEL_PATH = os.path.join(MODELS_DIR_PATH, 'trained_model.h5py')
+MODEL_PATH = os.path.join(MODELS_DIR, 'trained_model.h5py')
 
 # Length of each document field (common length)
 TITLES_PAD = 10

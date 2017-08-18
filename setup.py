@@ -13,6 +13,5 @@ setup(name='cnn-adult-filter',
       package_data={
           'adultfilter': ['data/embeddings.pickle',
                           'data/vocabulary.json',
-                          'data/word2vec_emb/*.pkl',
                           'models/trained_model.h5py'],
       })
